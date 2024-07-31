@@ -1,0 +1,60 @@
+#avatar {
+  width: 180px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; 
+  border: 2px solid black;
+}
+
+
+@media screen and (min-width: 575px) {
+  #profilepic{
+    text-align: right;
+  }
+}
+@media screen and (max-width: 575px) {
+  #profilepic{
+    text-align: left;
+    padding-bottom: 1em;
+  }
+}
+
+
+#profilecard{
+  text-align: left;
+  margin: auto;
+}
+
+.flags{
+  border-radius: 3px;
+  height:20px;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 575px) {
+  .explogo{
+    text-align: right;
+  }
+}
+@media screen and (max-width: 575px) {
+  .explogo{
+    text-align: left;
+    padding-bottom: 2em;
+  }
+}
+
+
+
+.expdesc{
+  text-align: left;
+  margin:auto;
+}
+
+.logopic{
+  width: 100px;
+  opacity: 75%;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
