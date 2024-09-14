@@ -45,7 +45,6 @@
 }
 
 
-
 .expdesc{
   text-align: left;
   margin:auto;
@@ -57,4 +56,8 @@
   border-radius: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.certificate{
+  width:100px;
 }

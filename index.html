@@ -219,10 +219,39 @@
                     Fundamental physics, Mathematics, Electronics, Control engineering, programming (C,MatLab).
                 </div>
             </div>
+            <hr>
+            <div class="pt-5">
+                <h4>Certificates</h4>
+            </div>
+            <div class="row exp pb-5">
+                <div class="explogo col-sm-3">
+                    <img class="logopic" src="pics/ecole_polytechnique.jpg">
+                    </a>
+                </div>
+                <div class="expdesc col-sm-9">
+                    <i>September 2024</i> <br> 
+                    <b>Quantum mechanics</b> <br>
+                    Wave functions, Schrodinger equation, Uncertainty principle, probabilities, fourier transform
+                    <br><br>
+                    <img class="certificate" src="pics/certificat_mecanique_quantique.png">
+
+                </div>
+            </div>
+
 
             <hr>
 
         
+        </div>
+
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="" id="imagepreview" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -230,6 +259,11 @@
         <script src="libs/jquery-3.6.0.min.js"></script>
 
         <script>
+
+        $('.certificate').on('click' ,function(){
+            $('#imagepreview').attr('src', $(this).attr('src'));
+            $('#imagemodal').modal('show');
+        });
 
         </script>
     </body>
